@@ -56,7 +56,7 @@ def order_esp():
         resources["money"] += cost
         resources["water"] -= MENU["espresso"]["ingredients"]["water"]
         resources["coffee"] -= MENU["espresso"]["ingredients"]["coffee"]
-        print(f"Here is your espresso.\nYour change is ${coin_input - cost}")
+        print(f"Here is your espresso.\nYour change is ${round(coin_input - cost, 2)}")
     else:
         print("Sorry, that wasn't enough money")
 
@@ -92,7 +92,7 @@ def order_cap():
         resources["water"] -= MENU["cappuccino"]["ingredients"]["water"]
         resources["milk"] -= MENU["cappuccino"]["ingredients"]["milk"]
         resources["coffee"] -= MENU["cappuccino"]["ingredients"]["coffee"]
-        print(f"Here is your cappuccino.\nYour change is ${coin_input - cost}")
+        print(f"Here is your cappuccino.\nYour change is ${round(coin_input - cost, 2)}")
     else:
         print("Sorry, that wasn't enough money")
 
